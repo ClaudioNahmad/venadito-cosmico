@@ -43,11 +43,7 @@ OMPFLAG   = -fopenmp
 #OMPFLAG   = -openmp
 
 # all other compilation flags
-#********************************************************************************************
-#				HIKURI 13 abril 2018
-CCFLAG = -g -fPIC -I/home/claudio/software/gsl2.4/include -L/home/claudio/software/gsl/lib
-#added -I/home.... etc
-#********************************************************************************************
+CCFLAG = -g -fPIC
 LDFLAG = -g -fPIC
 
 # leave blank to compile without HyRec, or put path to HyRec directory
@@ -145,15 +141,8 @@ all: class libclass.a classy
 libclass.a: $(TOOLS) $(SOURCE) $(EXTERNAL)
 	$(AR)  $@ $(addprefix build/, $(TOOLS) $(SOURCE) $(EXTERNAL))
 
-#********************************************************************************************
-#				HIKURI 13 abril 2018
 class: $(TOOLS) $(SOURCE) $(EXTERNAL) $(OUTPUT) $(CLASS)
-	$(CC) -L/home/claudio/software/gsl2.4/lib -lgsl -lgslcblas
-	$(OPTFLAG) -o class -L/home/claudio/software/gsl2.4/lib -lgsl -lgslcblas -lm
-	$(OMPFLAG) $(LDFLAG) -o class $(addprefix build/,$(notdir $^)) -lm
-
-#modified $(CC) and 4(OPTFLAG)
-#********************************************************************************************
+	$(CC) $(OPTFLAG) $(OMPFLAG) $(LDFLAG) -o class $(addprefix build/,$(notdir $^)) -lm
 
 test_sigma: $(TOOLS) $(SOURCE) $(EXTERNAL) $(OUTPUT) $(TEST_SIGMA)
 	$(CC) $(OPTFLAG) $(OMPFLAG) $(LDFLAG) -o test_sigma $(addprefix build/,$(notdir $^)) -lm
