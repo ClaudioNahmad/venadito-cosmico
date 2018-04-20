@@ -10,6 +10,13 @@
 #include "dei_rkck.h"
 #include "parser.h"
 
+/**********************************************/
+/*HIKURI 13 & 19 abril 2018 */
+/*#include <../../../../software/gsl2.4/include/>				NO FUNCIONA
+/*#include <./../../../../software/gsl2.4/include/gsl/gsl_errno.h>		NO FUNCIONA*/
+#include <gsl/gsl_integration.h>						/* FUNCIONA */
+/**********************************************/
+
 enum spatial_curvature {flat,open,closed};
 
 /**
