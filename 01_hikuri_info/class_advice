@@ -26,3 +26,16 @@ CCFLAG = -g -fPIC -I/home/claudio/......./include -L/home/claudio.........../lib
 
 class:: $(CC) -L/home/claudio.........../lib -lgsl -lgslcblas
 	$(OPTFLAG) -o class -L/home/claudio.........../lib -lgsl -lgslcblas -lm
+
+
+
+UPDATE abril 19 2018:
+las líneas de arriba ya no se usan así, revisar Makefile, background.h y setup.py
+*************************************************************************************************
+			abril 19 2018
+
+Ya está funcionando GSL en CLASS, se modificaron:
+
+- varias líneas en Makefile 
+- una línea en background.h		(../include)
+- varias líneas en setup.py		(../python)
