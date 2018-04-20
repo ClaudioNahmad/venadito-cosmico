@@ -38,17 +38,34 @@ OPTFLAG = -O4 -ffast-math #-march=native
 #OPTFLAG = -fast
 
 # your openmp flag (comment for compiling without openmp)
-OMPFLAG   = -fopenmp
+
+#********************************************************************************************
+#				HIKURI 19 abril 2018
+#the line below was commented out, for no apparent reason, try to run "make" again with
+#the line un-commented
+
+#OMPFLAG   = -fopenmp
+#********************************************************************************************
+
 #OMPFLAG   = -mp -mp=nonuma -mp=allcores -g
 #OMPFLAG   = -openmp
 
+
+
+
+#********************************************************************************************
+#				HIKURI 13 & 19 abril 2018	FUNCIONA!!
+
+CCFLAG = -g -fPIC
+LDFLAG= -g -fPIC -L/home/claudio/software/gsl2.4/lib/ -lgsl -lgslcblas
+#CCFLAG = -g -fPIC -I/home/claudio/software/gsl2.4/include/ -L/home/claudio/software/gsl2.4/lib/ -lgsl -lgslc
+#the line above was modified on april 13, was commented out
+
+#ORIGINAL
 # all other compilation flags
+#CCFLAG = -g -fPIC
+#LDFLAG = -g -fPIC
 #********************************************************************************************
-#				HIKURI 13 abril 2018
-CCFLAG = -g -fPIC -I/home/claudio/software/gsl2.4/include -L/home/claudio/software/gsl/lib
-#added -I/home.... etc
-#********************************************************************************************
-LDFLAG = -g -fPIC
 
 # leave blank to compile without HyRec, or put path to HyRec directory
 # (with no slash at the end: e.g. hyrec or ../hyrec)
@@ -61,8 +78,14 @@ HYREC = hyrec
 # pass current working directory to the code
 CCFLAG += -D__CLASSDIR__='"$(MDIR)"'
 
+
+#********************************************************************************************
+#				HIKURI 19 Abril 2018
+#-I/home/claudio/software/gsl2.4/include -I/home/claudio/software/gsl2.4/include/gsl were added
+
 # where to find include files *.h
-INCLUDES = -I../include
+INCLUDES = -I../include -I/home/claudio/software/gsl2.4/include -I/home/claudio/software/gsl2.4/include/gsl
+#********************************************************************************************
 
 # automatically add external programs if needed. First, initialize to blank.
 EXTERNAL =
@@ -145,14 +168,21 @@ all: class libclass.a classy
 libclass.a: $(TOOLS) $(SOURCE) $(EXTERNAL)
 	$(AR)  $@ $(addprefix build/, $(TOOLS) $(SOURCE) $(EXTERNAL))
 
-#********************************************************************************************
-#				HIKURI 13 abril 2018
-class: $(TOOLS) $(SOURCE) $(EXTERNAL) $(OUTPUT) $(CLASS)
-	$(CC) -L/home/claudio/software/gsl2.4/lib -lgsl -lgslcblas
-	$(OPTFLAG) -o class -L/home/claudio/software/gsl2.4/lib -lgsl -lgslcblas -lm
-	$(OMPFLAG) $(LDFLAG) -o class $(addprefix build/,$(notdir $^)) -lm
 
-#modified $(CC) and 4(OPTFLAG)
+#********************************************************************************************
+#				HIKURI 13 & 19 abril 2018
+#class: $(TOOLS) $(SOURCE) $(EXTERNAL) $(OUTPUT) $(CLASS)
+#	$(CC) -L/home/claudio/software/gsl2.4/lib/ -lgsl -lgslcblas
+#	$(OPTFLAG) -o class -L/home/claudio/software/gsl2.4/lib/ -lgsl -lgslcblas -lm 
+#	$(OMPFLAG) $(LDFLAG) -o class $(addprefix build/,$(notdir $^)) -lm
+
+#modified $(CC) and $(OPTFLAG) 		apr 13
+#left as original			apr 19
+
+#ORIGINAL
+class: $(TOOLS) $(SOURCE) $(EXTERNAL) $(OUTPUT) $(CLASS)
+	$(CC) $(OPTFLAG) $(OMPFLAG) $(LDFLAG) -o class $(addprefix build/,$(notdir $^)) -lm
+
 #********************************************************************************************
 
 test_sigma: $(TOOLS) $(SOURCE) $(EXTERNAL) $(OUTPUT) $(TEST_SIGMA)
