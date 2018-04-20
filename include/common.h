@@ -8,12 +8,6 @@
 #include "svnversion.h"
 #include <stdarg.h>
 
-/**********************************************
-HIKURI 13 abril 2018 */
-#include <./../../../../software/gsl2.4/include/gsl/gsl_integration.h>
-#include <./../../../../software/gsl2.4/include/gsl/gsl_errno.h>
-/**********************************************/
-
 #ifdef _OPENMP
 #include "omp.h"
 #endif
