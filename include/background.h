@@ -12,7 +12,7 @@
 
 /**********************************************/
 /*HIKURI 13 & 19 abril 2018 */
-/*#include <../../../../software/gsl2.4/include/>				NO FUNCIONA
+/*#include <../../../../software/gsl2.4/include/>				NO FUNCIONA*/
 /*#include <./../../../../software/gsl2.4/include/gsl/gsl_errno.h>		NO FUNCIONA*/
 #include <gsl/gsl_integration.h>						/* FUNCIONA */
 /**********************************************/

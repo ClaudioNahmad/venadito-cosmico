@@ -44,7 +44,10 @@ OPTFLAG = -O4 -ffast-math #-march=native
 #the line below was commented out, for no apparent reason, try to run "make" again with
 #the line un-commented
 
-#OMPFLAG   = -fopenmp
+OMPFLAG   = -fopenmp
+
+#				HIKURI 9 mayo 2018
+#uncommented the line above
 #********************************************************************************************
 
 #OMPFLAG   = -mp -mp=nonuma -mp=allcores -g
