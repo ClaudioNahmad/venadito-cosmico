@@ -1,0 +1,9 @@
+# List of input/precision parameters passed
+# but not used (just for info)
+#
+l_max_tensors = 500
+selection = gaussian
+selection_mean = 1.
+selection_width = 0.5
+bessel file = yes
+bessels_verbose = 1
