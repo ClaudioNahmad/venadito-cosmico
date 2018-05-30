@@ -497,6 +497,7 @@ int background_w_fld(
   *w_fld = pba->w0_fld + pba->wa_fld * (1. - a / pba->a_today);
   /* *w_fld = pba->w0_fld + pba->wa_fld * (1. - a / pba->a_today);  			CPL */ 
   /* *w_fld = pba->b0_fld * (a) + pba->b1_fld * (1. -a); 				WN1 */
+  /* *w_fld = (pba->b0_fld * a) + (pba->b1_fld * (1. -a));				WN1 con paréntesis*/
   /* *w_fld = (pba->w0_fld * a) + ((pba->w0_fld + pba->wa_fld)* (1. -a)); 		WN1 con parámetros de CPL*/
 /**************************************************************************************************************************/
 	/*NOTAAAAAAAAAAAAAAAAA		HIKURI 12-abr-18
@@ -514,7 +515,7 @@ int background_w_fld(
         analytic expression of the derivative of the previous
         function, let's use it! */
 
-  *dw_over_da_fld = - pba->wa_fld / pba->a_today;  
+  *dw_over_da_fld = - pba->wa_fld / pba->a_today;
   /* *dw_over_da_fld = - pba->wa_fld / pba->a_today; 					CPL */
   /* *dw_over_da_fld =  pba->b0_fld - pba->b1_fld; 					WN1 */
   /* *dw_over_da_fld =  pba->w0_fld - (pba->w0_fld + pba->wa_fld);			WN1 con parámetros de CPL*/

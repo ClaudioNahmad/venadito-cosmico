@@ -1,0 +1,9 @@
+# List of input/precision parameters passed
+# but not used (just for info)
+#
+w0_fld = -1
+wa_fld = 0
+cs2_fld = 1
+use_ppf = yes
+c_gamma_over_c_fld = 0.4
+l_max_tensors = 500
