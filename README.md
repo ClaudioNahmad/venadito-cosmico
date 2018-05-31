@@ -1,4 +1,4 @@
-<img src="https://masdemx.com/wp-content/uploads/2016/10/venado-arte-huichol-1-1-1.jpg" alt="Logo" height="200" width="200" align="middle">
+<img src="https://masdemx.com/wp-content/uploads/2016/10/venado-arte-huichol-1-1-1.jpg" alt="Logo" height="400" width="400" align="middle">
 
 # CLASS: Cosmic Linear Anisotropy Solving System
   [original site](https://github.com/lesgourg/class_public)
