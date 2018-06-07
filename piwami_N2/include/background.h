@@ -54,10 +54,11 @@ struct background
   double wa_fld; /**< \f$ wa_{DE} \f$: fluid equation of state parameter derivative */
 
 /**********************************************************************************/
-			/*HIKURI 17-may-2018*/
+			/*HIKURI 7-jun-2018*/
 
   double b0_fld;
   double b1_fld;
+  double b2_fld;
 /**********************************************************************************/
   double cs2_fld; /**< \f$ c^2_{s~DE} \f$: sound speed of the fluid
 		     in the frame comoving with the fluid (so, this is

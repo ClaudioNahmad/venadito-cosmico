@@ -1021,6 +1021,7 @@ int input_read_parameters(
     class_read_double("cs2_fld",pba->cs2_fld);
     class_read_double("b0_fld",pba->b0_fld);
     class_read_double("b1_fld",pba->b1_fld);
+    class_read_double("b2_fld",pba->b2_fld);
 
     class_call(parser_read_string(pfc,
                                   "use_ppf",
@@ -2917,6 +2918,7 @@ int input_default_params(
 
   pba->b0_fld=-1.;
   pba->b1_fld=0.;
+  pba->b2_fld=0.;
 
   pba->shooting_failed = _FALSE_;
 

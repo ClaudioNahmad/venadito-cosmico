@@ -494,7 +494,7 @@ int background_w_fld(
                      double * integral_fld) {
   /** 	1. first, define the function w(a) */
 
-  *w_fld = (pow(a,2.)* pba->b0_fld) + ((a - (pow(a,2.))* pba->b1_fld) + ((pow((1.-a),2.))* pba->b2_fld);
+  *w_fld = pba->b2_fld + (pba->b1_fld - 2.*pba->b2_fld)*a + (pba->b0_fld - pba->b1_fld +pba->b2_fld)*pow(a,2.);
   /* *w_fld = pba->b0_fld * (a) + pba->b1_fld * (1. -a); 				WN1 */
   /* *w_fld = (pba->b0_fld * a) + (pba->b1_fld * (1. -a));				WN1 con paréntesis*/
 /**************************************************************************************************************************/
@@ -513,7 +513,7 @@ int background_w_fld(
         analytic expression of the derivative of the previous
         function, let's use it! */
 
-  *dw_over_da_fld = (2.*a*pba->b0_fld) + ((1.-2.*a)* pba->b1) + ((2.*a - 2.)* pba->b2_fld);
+  *dw_over_da_fld = (pba->b1_fld - (2.*pba->b2_fld)) + 2.*a*(pba->b0_fld - pba->b1_fld + pba->b2_fld);
   /* *dw_over_da_fld =  pba->b0_fld - pba->b1_fld; 					WN1 */
 
   /**	3. 
@@ -528,7 +528,7 @@ int background_w_fld(
         a=a_ini, using for instance Romberg integration. It should be
         fast, simple, and accurate enough. */
 
-  *integral_fld = 
+  *integral_fld = 3.*((pba->b1_fld - 2.*pba->b2_fld)*(1.-a) + 0.5*(pba->b0_fld-pba->b1_fld+pba->b2_fld)*(1.-pow(a,2.)) - log(a)*(1+pba->b2_fld));
   /* *integral_fld = 3.*((1.+pba->w0_fld+pba->wa_fld)*log(pba->a_today/a) + pba->wa_fld*(a/pba->a_today-1.)); 					CPL */
   /* *integral_fld = 3.*(a*(pba->b0_fld - pba->b1_fld) + (pba->b1_fld - 1.) * log(a)) - 3.* pba->a_today * (pba->b0_fld - pba->b0_fld);		WN1 */
 
