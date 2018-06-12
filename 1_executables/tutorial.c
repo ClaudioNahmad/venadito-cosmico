@@ -1,6 +1,12 @@
 /***********************************************/
 
-/*tutorial1: OUTPUT*/
+
+
+
+/****** SECTION 1: input/output ***************************************************************/
+
+
+/*tutorial 1: OUTPUT*/
 /*
 #include <stdio.h>      //This is needed to run printf() function.
 int main()
@@ -9,7 +15,7 @@ int main()
     return 0;
 }*/
 
-/*tutorial2: INTEGER OUTPUT*/
+/*tutorial 2: INTEGER OUTPUT*/
 /*
 #include <stdio.h>
 int main()
@@ -19,7 +25,7 @@ int main()
     return 0;
 }*/
 
-/*tutorial3a: INTEGER INPUT/OUTPUT*/
+/*tutorial 3a: INTEGER INPUT/OUTPUT*/
 /*
 #include <stdio.h>
 int main()
@@ -31,7 +37,7 @@ int main()
     return 0;
 }*/
 
-/*tutorial3b: FLOATS INPUT/OUTPUT (I/O)*/
+/*tutorial 3b: FLOATS INPUT/OUTPUT (I/O)*/
 /*
 #include <stdio.h>
 int main()
@@ -44,7 +50,7 @@ int main()
     return 0;
 }*/
 
-/*tutorial4: CHARACTER I/O*/
+/*tutorial 4: CHARACTER I/O*/
 /*
 #include <stdio.h>
 int main()
@@ -56,7 +62,7 @@ int main()
     return 0;
 } */
 
-/*tutorial5: CHAR TO ASCII*/
+/*tutorial 5: CHAR TO ASCII*/
 /*
 #include <stdio.h>
 int main()
@@ -73,7 +79,7 @@ int main()
     return 0;
 }*/
 
-/*tutorial6: ASCII TO CHAR*/
+/*tutorial 6: ASCII TO CHAR*/
 /*
 #include <stdio.h>
 int main()
@@ -83,8 +89,8 @@ int main()
     return 0;
 }  */
 
-/*tutorial7: SOME SYNTAX ON OUTPUT*/
-
+/*tutorial 7: SOME SYNTAX ON OUTPUT*/
+/*
 #include <stdio.h>
 int main()
 {
@@ -107,6 +113,35 @@ int main()
     // Prints the number in exponential notation(scientific notation)
     printf("Floating point number in exponential form: %e\n",decimal);
     return 0;
-}   
+}   */
 
+/****** SECTION 2: C-Operators ***************************************************************/
+
+/*tutorial 8: Arithmetic Operators*/
+
+#include <stdio.h>
+int main()
+{
+    int a = 9,b = 4, c;
+    
+    printf("a = %d \n",a);
+    printf("b = %d \n",b);
+
+    c = a+b;
+    printf("a+b = %d \n",c);
+
+    c = a-b;
+    printf("a-b = %d \n",c);
+    
+    c = a*b;
+    printf("a*b = %d \n",c);
+    
+    c=a/b;
+    printf("a/b = %d \n",c);
+    
+    c=a%b;
+    printf("Remainder when a divided by b = %d \n",c);
+    
+    return 0;
+}
 
