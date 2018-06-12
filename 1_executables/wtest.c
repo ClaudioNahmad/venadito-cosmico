@@ -33,7 +33,7 @@ int main()
 
     result = pow(base,power);
 
-    printf("%.1lf^%.1lf = %.2lf", base, power, result);
+    printf("%.1lf^%.1lf = %.2lf \n", base, power, result);
 
     return 0;
 }

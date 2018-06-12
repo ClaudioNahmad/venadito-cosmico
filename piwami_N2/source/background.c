@@ -480,7 +480,8 @@ TODO REVISAR CÓMO LO TIENE MARIANA AQUI, revisar si va aquí o en antes del úl
  * @param a              Input: current value of scale factor
  * @param w_fld          Output: equation of state parameter w_fld(a)
  * @param dw_over_da_fld Output: function dw_fld/da
- * @param integral_fld   Output: function \f$ \int_{a}^{a_0} da 3(1+w_{fld})/a \f$ * @return the error status
+ * @param integral_fld   Output: function \f$ \int_{a}^{a_0} da 3(1+w_{fld})/a \f$ 
+ * @return the error status
  */
 
 /**************************************************************************************************************************/
@@ -488,15 +489,13 @@ TODO REVISAR CÓMO LO TIENE MARIANA AQUI, revisar si va aquí o en antes del úl
 
 int background_w_fld(
                      struct background * pba,
-                     double a,			/*TODO quitar q_factor de aqui y definirlo localmente abajo o revisar si se puede definir dentro de los ()'s como acuí*/
+                     double a,			
                      double * w_fld,
                      double * dw_over_da_fld,
                      double * integral_fld) {
   /** 	1. first, define the function w(a) */
 
   *w_fld = pba->b2_fld + (pba->b1_fld - 2.*pba->b2_fld)*a + (pba->b0_fld - pba->b1_fld +pba->b2_fld)*pow(a,2.);
-  /* *w_fld = pba->b0_fld * (a) + pba->b1_fld * (1. -a); 				WN1 */
-  /* *w_fld = (pba->b0_fld * a) + (pba->b1_fld * (1. -a));				WN1 con paréntesis*/
 /**************************************************************************************************************************/
 	/*NOTAAAAAAAAAAAAAAAAA		HIKURI 12-abr-18
 		el parámetro q_factor y a_trans no los definas abajo de struct!!!!
@@ -514,7 +513,6 @@ int background_w_fld(
         function, let's use it! */
 
   *dw_over_da_fld = (pba->b1_fld - (2.*pba->b2_fld)) + 2.*a*(pba->b0_fld - pba->b1_fld + pba->b2_fld);
-  /* *dw_over_da_fld =  pba->b0_fld - pba->b1_fld; 					WN1 */
 
   /**	3. 
 	- finally, give the analytic solution of the following integral:
@@ -529,8 +527,7 @@ int background_w_fld(
         fast, simple, and accurate enough. */
 
   *integral_fld = 3.*((pba->b1_fld - 2.*pba->b2_fld)*(1.-a) + 0.5*(pba->b0_fld-pba->b1_fld+pba->b2_fld)*(1.-pow(a,2.)) - log(a)*(1+pba->b2_fld));
-  /* *integral_fld = 3.*((1.+pba->w0_fld+pba->wa_fld)*log(pba->a_today/a) + pba->wa_fld*(a/pba->a_today-1.)); 					CPL */
-  /* *integral_fld = 3.*(a*(pba->b0_fld - pba->b1_fld) + (pba->b1_fld - 1.) * log(a)) - 3.* pba->a_today * (pba->b0_fld - pba->b0_fld);		WN1 */
+
 
   /** note: of course you can generalise these formulas to anything,
       defining new parameters pba->w..._fld. Just remember that so

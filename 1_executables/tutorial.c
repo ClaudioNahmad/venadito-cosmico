@@ -118,7 +118,7 @@ int main()
 /****** SECTION 2: C-Operators ***************************************************************/
 
 /*tutorial 8: Arithmetic Operators*/
-
+/*
 #include <stdio.h>
 int main()
 {
@@ -143,5 +143,8 @@ int main()
     printf("Remainder when a divided by b = %d \n",c);
     
     return 0;
-}
+}   */ 
+
+/*tutorial 9: Increment and Decrement Operators*/
+
 
