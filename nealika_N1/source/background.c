@@ -494,7 +494,7 @@ int background_w_fld(
                      double * integral_fld) {
   /** 	1. first, define the function w(a) */
 
-  *w_fld = (pba->b0_fld * a) + (pba->b1_fld * (1. -a));
+  *w_fld = pba->w0_fld + pba->wa_fld * (1. - a / pba->a_today);
   /* *w_fld = pba->w0_fld + pba->wa_fld * (1. - a / pba->a_today);  			CPL */ 
   /* *w_fld = pba->b0_fld * (a) + pba->b1_fld * (1. -a); 				WN1 */
   /* *w_fld = (pba->b0_fld * a) + (pba->b1_fld * (1. -a));				WN1 con paréntesis*/
@@ -515,7 +515,7 @@ int background_w_fld(
         analytic expression of the derivative of the previous
         function, let's use it! */
 
-  *dw_over_da_fld =  pba->b0_fld - pba->b1_fld;
+  *dw_over_da_fld = - pba->wa_fld / pba->a_today;
   /* *dw_over_da_fld = - pba->wa_fld / pba->a_today; 					CPL */
   /* *dw_over_da_fld =  pba->b0_fld - pba->b1_fld; 					WN1 */
   /* *dw_over_da_fld =  pba->w0_fld - (pba->w0_fld + pba->wa_fld);			WN1 con parámetros de CPL*/
@@ -532,7 +532,7 @@ int background_w_fld(
         a=a_ini, using for instance Romberg integration. It should be
         fast, simple, and accurate enough. */
 
-  *integral_fld = 3*((1-a)*(pba->b0_fld - pba->b1_fld) - (1. + pba->b1_fld) * log(a));
+  *integral_fld = 3.*((1.+pba->w0_fld+pba->wa_fld)*log(pba->a_today/a) + pba->wa_fld*(a/pba->a_today-1.));
   /* *integral_fld = 3.*((1.+pba->w0_fld+pba->wa_fld)*log(pba->a_today/a) + pba->wa_fld*(a/pba->a_today-1.)); 			CPL */
   /* *integral_fld = 3*(a*(pba->b0_fld - pba->b1_fld) + (1. + pba->b1_fld) * log(a));						WN1 */
   /* *integral_fld = 3*(a*(pba->w0_fld - (pba->w0_fld + pba->wa_fld)) + (1. + (pba->w0_fld + pba->wa_fld)) * log(a));		WN1 con parámetros de CPL*/
