@@ -7,6 +7,9 @@
 
 ## Venadito Cósmico version
 #### A five-parameter Dark Energy Parameterization 
+
+<img src="comparison1.png" align="middle" height="70%">
+
 *************************************************************************
 ## Claudio Salomon Nahmad Arcaraz | 2018
 #### BSc. Thesis at Instituto de Física UNAM for physics bachelor's degree
