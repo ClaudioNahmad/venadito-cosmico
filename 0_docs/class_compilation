@@ -28,7 +28,7 @@ Si nuestro gcc es menor o igual a 4.6 escríbanme por slack y les mando el instr
 Ahora, creamos un ambiente de python para que Class corra correctamente, recordemos que necesitamos python 2.7. CON ANACONDA
 INSTALADO:
 
-	> conda create --name class2-7 --yes python=2.7 numpy scipy ipython scikit-learn matplotlib cython		(2)
+	> conda create --name class2-7 --yes python=2.7 numpy scipy ipython scikit-learn matplotlib cython pip pyfits	(2)
 
 El comando anterior crea un ambiente llamado "class2-7" pero el nombre es a gusto de ca'a quien.
 NOTA: cython y numpy son paqueterías importantes, así que no hay que olvidar instalarlas, en caso de olvidar instalar una,
