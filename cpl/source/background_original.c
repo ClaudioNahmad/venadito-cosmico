@@ -1,7 +1,3 @@
-/** W background **/
-
-
-
 /** @file background.c Documented background module
  *
  * * Julien Lesgourgues, 17.04.2011
@@ -456,24 +452,6 @@ int background_functions(
 
 }
 
-/**************************************************************************************************************************/
-/* HIKURI 12-abr-18
-
- * @param wa_fld
- * @param w0_fld
- * @param q_fld
- * @param a_trans
-
-double bkgrnd_w_fld_i(
-	double lna, void, *param
-
-
-TODO REVISAR CÓMO LO TIENE MARIANA AQUI, revisar si va aquí o en antes del último "return _SUCCESS_ de la línea de arriba (451)
-
-*/
-/**************************************************************************************************************************/
-
-
 /**
  * Single place where the fluid equation of state is
  * defined. Parameters of the function are passed through the
@@ -484,48 +462,28 @@ TODO REVISAR CÓMO LO TIENE MARIANA AQUI, revisar si va aquí o en antes del úl
  * @param a              Input: current value of scale factor
  * @param w_fld          Output: equation of state parameter w_fld(a)
  * @param dw_over_da_fld Output: function dw_fld/da
- * @param integral_fld   Output: function \f$ \int_{a}^{a_0} da 3(1+w_{fld})/a \f$ * @return the error status
+ * @param integral_fld   Output: function \f$ \int_{a}^{a_0} da 3(1+w_{fld})/a \f$
+ * @return the error status
  */
-
-/**************************************************************************************************************************/
-/** HIKURI 17-may-18 */
 
 int background_w_fld(
                      struct background * pba,
-                     double a,			/*TODO quitar q_factor de aqui y definirlo localmente abajo o revisar si se puede definir dentro de los ()'s como acuí*/
+                     double a,
                      double * w_fld,
                      double * dw_over_da_fld,
                      double * integral_fld) {
-  /** 	1. first, define the function w(a) */
 
-  *w_fld = pba->b0_fld * (a) + pba->b1_fld * (1. -a);
-  /* *w_fld = pba->w0_fld + pba->wa_fld * (1. - a / pba->a_today);  			CPL */ 
-  /* *w_fld = pba->b0_fld * (a) + pba->b1_fld * (1. -a); 				WN1 */
-  /* *w_fld = (pba->b0_fld * a) + (pba->b1_fld * (1. -a));				WN1 con paréntesis*/
-  /* *w_fld = (pba->w0_fld * a) + ((pba->w0_fld + pba->wa_fld)* (1. -a)); 		WN1 con parámetros de CPL*/
-/**************************************************************************************************************************/
-	/*NOTAAAAAAAAAAAAAAAAA		HIKURI 12-abr-18
-		el parámetro q_factor y a_trans no los definas abajo de struct!!!!
-		definelos localmente como 
-			double q = pba-> q_factor
-			double wa = pba -> wa_fld
-			double a_trans = pba -> a_trans
-	*/
-/**************************************************************************************************************************/
+  /** - first, define the function w(a) */
+  *w_fld = pba->w0_fld + pba->wa_fld * (1. - a / pba->a_today);
 
-  /**	2. then, give the corresponding analytic derivative dw/da (used
+  /** - then, give the corresponding analytic derivative dw/da (used
         by perturbation equations; we could compute it numerically,
         but with a loss of precision; as long as there is a simple
         analytic expression of the derivative of the previous
         function, let's use it! */
+  *dw_over_da_fld = - pba->wa_fld / pba->a_today;
 
-  *dw_over_da_fld = pba->b0_fld - pba->b1_fld;
-  /* *dw_over_da_fld = - pba->wa_fld / pba->a_today; 					CPL */
-  /* *dw_over_da_fld =  pba->b0_fld - pba->b1_fld; 					WN1 */
-  /* *dw_over_da_fld =  pba->w0_fld - (pba->w0_fld + pba->wa_fld);			WN1 con parámetros de CPL*/
-
-  /**	3. 
-	- finally, give the analytic solution of the following integral:
+  /** - finally, give the analytic solution of the following integral:
         \f$ \int_{a}^{a0} da 3(1+w_{fld})/a \f$. This is used in only
         one place, in the initial conditions for the background, and
         with a=a_ini. If your w(a) does not lead to a simple analytic
@@ -535,11 +493,7 @@ int background_w_fld(
         implement a numerical calculation of this integral only for
         a=a_ini, using for instance Romberg integration. It should be
         fast, simple, and accurate enough. */
-
-  *integral_fld = 3*(a*(pba->b0_fld - pba->b1_fld) + (1. + pba->b1_fld) * log(a));
-  /* *integral_fld = 3.*((1.+pba->w0_fld+pba->wa_fld)*log(pba->a_today/a) + pba->wa_fld*(a/pba->a_today-1.)); 			CPL */
-  /* *integral_fld = 3*(a*(pba->b0_fld - pba->b1_fld) + (1. + pba->b1_fld) * log(a));						WN1 */
-  /* *integral_fld = 3*(a*(pba->w0_fld - (pba->w0_fld + pba->wa_fld)) + (1. + (pba->w0_fld + pba->wa_fld)) * log(a));		WN1 con parámetros de CPL*/
+  *integral_fld = 3.*((1.+pba->w0_fld+pba->wa_fld)*log(pba->a_today/a) + pba->wa_fld*(a/pba->a_today-1.));
 
   /** note: of course you can generalise these formulas to anything,
       defining new parameters pba->w..._fld. Just remember that so
@@ -548,8 +502,6 @@ int background_w_fld(
 
   return _SUCCESS_;
 }
-
-/**************************************************************************************************************************/
 
 /**
  * Initialize the background structure, and in particular the
@@ -1961,15 +1913,11 @@ int background_initial_conditions(
     /* integrate rho_fld(a) from a_ini to a_0, to get rho_fld(a_ini) given rho_fld(a0) */
     class_call(background_w_fld(pba,a,&w_fld,&dw_over_da_fld,&integral_fld), pba->error_message, pba->error_message);
 
-/**************************************************************************************************************************/    
-/*			HIKURI ------------ 10 de abril de 2018 */
-
     /* Note: for complicated w_fld(a) functions with no simple
     analytic integral, this is the place were you should compute
     numerically the simple 1d integral [int_{a_ini}^{a_0} 3
     [(1+w_fld)/a] da] (e.g. with the Romberg method?) instead of
     calling background_w_fld */
-
 
     /* rho_fld at initial time */
     pvecback_integration[pba->index_bi_rho_fld] = rho_fld_today * exp(integral_fld);
