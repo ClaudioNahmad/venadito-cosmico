@@ -56,8 +56,8 @@ struct background
 /**********************************************************************************/
 			/*HIKURI 17-may-2018*/
 
-  double b0_fld;
-  double b1_fld;
+  double b0_fld; /**< \f$ b0_{DE} \f$: current fld EoS parameter, hikuri */
+  double b1_fld; /**< \f$ b1_{DE} \f$: another fld EoS parameter, hikuri */
 /**********************************************************************************/
   double cs2_fld; /**< \f$ c^2_{s~DE} \f$: sound speed of the fluid
 		     in the frame comoving with the fluid (so, this is
