@@ -9,7 +9,9 @@
 #### El universo: Nealika (El Sol), Piwami (El Halcón), Kauyumari (El Venado) y Hikuri (El Abuelo)
 #### El amigo Nahua que trae el fuego: Tlacuatzin
 
-<img src="http://books.openedition.org/cemca/docannexe/image/2223/img-2.jpg" alt="Logo" height="200" width="200" align="middle"><img src="https://scontent-sin6-1.cdninstagram.com/vp/cb98b3b3536762a160c8ab3496dfd86f/5B9991D7/t51.2885-15/s320x320/e35/c138.0.803.803/28754140_810930629099225_8992432087730487296_n.jpg" alt="Logo" height="230" width="230" align="middle">
+<img src="http://books.openedition.org/cemca/docannexe/image/2223/img-2.jpg" height="200" width="200" align="middle">
+
+<img src="https://scontent-sin6-1.cdninstagram.com/vp/cb98b3b3536762a160c8ab3496dfd86f/5B9991D7/t51.2885-15/s320x320/e35/c138.0.803.803/28754140_810930629099225_8992432087730487296_n.jpg" height="230" width="230" align="middle">
 
 
 <!--otra imagen (cuervo) en "https://i.pinimg.com/originals/68/0a/b0/680ab0766d762f58282bf73b42b1a20b.jpg"-->
