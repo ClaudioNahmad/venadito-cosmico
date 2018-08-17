@@ -36,7 +36,7 @@ This is a work in progress.
 ### B. The pictographical results so far...
 
 <p>
-<h4> 1. Matter Power Spectrum of w(N=1) vs CPL parametrizations, computed with CLASS 2</h4>
+<h4> 1. Temperature Cl of w(N=1) vs CPL parametrizations, computed with CLASS 2</h4>
 <img src="comparison1.png" align="middle" height="600">
 </p>
 
