@@ -6,8 +6,8 @@
 
 <img src="https://masdemx.com/wp-content/uploads/2016/10/venado-arte-huichol-1-1-1.jpg" height="400" width="400" align="middle" alt="el universo"> <img src="universo.jpg" height="400" align="middle">
 
-#### El universo: Nealika (El Sol), Piwami (El Halcón), Kauyumari (El Venado) y Hikuri (El Abuelo)
-#### El amigo Nahua que trae el fuego: Tlacuatzin
+#### El universo: Nealika (El Sol) (N=1), Piwami (El Halcón) (N=2), Kauyumari (El Venado) (N=4) y Hikuri (El Abuelo)
+#### El amigo Nahua que trae el fuego: Tlacuatzin (N=3)
 
 <p>
 <img src="http://books.openedition.org/cemca/docannexe/image/2223/img-2.jpg" height="200" align="middle">
