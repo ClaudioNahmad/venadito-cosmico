@@ -16,7 +16,21 @@
 
 <!--otra imagen (cuervo) en "https://i.pinimg.com/originals/68/0a/b0/680ab0766d762f58282bf73b42b1a20b.jpg"-->
 
+<p>
+<h4> 1. Matter Power Spectrum of w(N=1) vs CPL parametrizations, computed with CLASS 2</h4>
 <img src="comparison1.png" align="middle" height="600">
+</p>
+
+
+<p>
+<h4> 2. A MontePython run in which parameters w0 and w1 are tested with Planck and JLA data</h4>
+
+<h5> 2.1 Run on Laptop with 4 cores and 5000 chains </h5>
+<img src="w0wa_test1_triangle.pdf" align="middle" height="600">
+
+<h5> 2.2 Run on cluster with 16 cores and 20,000 chains </h5>
+<img src="atocatl1_linear_triangle.pdf" align="middle" height="600">
+</p>
 
 *************************************************************************
 ## Claudio Salomon Nahmad Arcaraz | 2018
