@@ -44,10 +44,10 @@ This is a work in progress.
 <p>
 <h4> 2. A MontePython run in which parameters w0 and w1 are tested with Planck and JLA data</h4>
 
-<h5> 2.1 Run on Laptop with 4 cores and 5000 chains </h5>
+<h5> 2.1 Run on Laptop with 4 cores and 5000 steps </h5>
 <img src="w0wa.png" align="middle" height="600">
 
-<h5> 2.2 Run on cluster with 16 cores and 20,000 chains </h5>
+<h5> 2.2 Run on cluster with 16 cores and 20,000 steps </h5>
 <img src="atocatl1.png" align="middle" height="600">
 </p>
 
