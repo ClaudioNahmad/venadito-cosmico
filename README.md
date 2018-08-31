@@ -11,7 +11,7 @@ This is a work in progress.
 
 ##### Software and code in use:
 
-- [CLASS 2](https://github.com/lesgourg/class_public)
+- [CLASS 2.6](https://github.com/lesgourg/class_public)
 - [MontePython 2](https://monte-python.readthedocs.io/en/latest/index.html)
 - Wolfram Mathematica
 - Intel Fortran Compiler
