@@ -23,8 +23,23 @@ This is a work in progress.
 
 <img src="venadito.jpeg" height="400" width="400" align="middle" alt="el universo"> <img src="universo.jpg" height="400" align="middle">
 
-#### El universo: Nealika (El Sol) (N=1), Piwami (El Halcón) (N=2), Kauyumari (El Venado) (N=4) y Hikuri (El Abuelo)
-#### El amigo Nahua que trae el fuego: Tlacuatzin (N=3)
+#### El universo:
+  - Bisabuelo Cola de Venado: El Universo (Tututzi Maxa Kwaxi)
+  - Abuela Tierra (Tukutzi Nakawe)
+  - Abuelo Fuego (Nairy / Tatewari)
+  - Padre Sol (Tayau)
+  - El Hermano Venado (Tamatzi Kauyumari) (a)
+  - Madre Águila (b)
+  - Corazón y Plumas de Águila (c,d)
+  - Abuela Tierra (imágen de la Tierra) (Tukutzi Nakawe) (e)
+  - Halcón (Piwa'mi) (f)
+  - Biznaga de Peyote (Hikuri) (g)
+
+#### Serán simbolizados de la siguiente manera:
+  - El Fuego 
+  - El Sol a través de un escudo u "Ojo del Sol": Nearika/Nierika y con el número N=1
+  - El Águila con el número (N=2)
+  - El Venado Kauyumari (El Venado) (N=4) y Hikuri (El Abuelo)
 
 <p>
 <img src="http://books.openedition.org/cemca/docannexe/image/2223/img-2.jpg" height="200" align="middle">
