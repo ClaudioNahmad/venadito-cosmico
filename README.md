@@ -37,13 +37,13 @@ This is a work in progress.
 
 #### Serán simbolizados de la siguiente manera:
   - El Universo con el nombre Kwaxi ó Kwari y con el número N=0
-    - equivalente a modelo Lambda-CDM
+    - equivalente a modelo Lambda-CDM con w=-1
   - El Sol a través de un escudo u "Ojo del Sol": Nearika/Nierika y con el número N=1
-    - equivalente a modelo w-CDM ó CPL
+    - equivalente a modelo w0wa-CDM / parametrización CPL
   - El Águila con el nombre Wimari y el número N=2
-    - parametrización con 3 parámetros
+    - parametrización con 3 parámetros libres
   - El Venado con el nombre Kauyumari y el número N=4
-    - parametrización con 5 parámetros
+    - parametrización con 5 parámetros libres
 
 <p>
 <img src="img-2.jpg" height="200" align="middle">
