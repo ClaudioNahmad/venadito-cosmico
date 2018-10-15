@@ -5,10 +5,6 @@
 
 Venadito cósmico is a flexible equation-of-state (EoS) w(z) and w(a) that tries to parametrize the behavior of Dark Energy at close and medium redshifts. The equation can be expanded from a 2-parameter eq. to a 5 parameter eq. and is also reducible to Lambda-CDM model (i.e. w=-1). It is to be tested using CLASS + MontePython codes using BAO, SNa, H(z) and Planck datasets.
 
-The purpose of the following images is to link the scientific research being conducted, with the cosmogonic understanding of the Universe of the Wixarika and Nahua cultures in pre-hispanic Mexico, not just as an aesthetic analogy between numbers (N=1,2,3,4) and deities (Sun, Hawk, Deer, Peyote and Tlacuache) but as a test of reconciliation between the scientific work and the mithological tradition; two disciplines that appear to be antagonistic but may coexist peacefully and nourish from each other, making the scientific labour a more humane and diverse activity.
-
-This is a work in progress.
-
 ##### Software and code in use:
 
 - [CLASS 2.6.3](https://github.com/lesgourg/class_public)
@@ -18,6 +14,10 @@ This is a work in progress.
 - Open MPI
 - Python
 - and ImageMagick for .pdf -> .png conversions
+
+The purpose of the following images is to link the scientific research being conducted, with the cosmogonic understanding of the Universe (Tututzi Maxa Kwaxi) of the meso-american Waixarika (Huichol) culture in pre-hispanic Mexico. Not just as an aesthetic analogy between numbers (N=1,2,3,4) and deities (Sun, Eagle, Deer and Peyote) / (Tayau, Tatei Wexica Wimari, Tamatzi Kauyumari and Hikuri) but as a test of reconciliation between the scientific work and the mithological tradition; two disciplines that appear to be antagonistic but may coexist peacefully and nourish from each other, making the scientific labour a more humane and diverse activity.
+
+This is a work in progress.
 
 ### A. The Myth of the origin of the Universe according to Wixarika and Nahua cultures
 
