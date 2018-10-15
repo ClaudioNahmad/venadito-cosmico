@@ -42,8 +42,7 @@ This is a work in progress.
   - El Venado Kauyumari (El Venado) (N=4) y Hikuri (El Abuelo)
 
 <p>
-<img src="http://books.openedition.org/cemca/docannexe/image/2223/img-2.jpg" height="200" align="middle">
-<img src="tlacuatzin.jpg" align="middle" height="230">
+<img src="img-2.jpg" height="200" align="middle">
 </p>
 
 <!--otra imagen (cuervo) en "https://i.pinimg.com/originals/68/0a/b0/680ab0766d762f58282bf73b42b1a20b.jpg"-->
