@@ -3,7 +3,7 @@
 ## Venadito Cósmico version
 #### A five-parameter Dark Energy Parameterization 
 
-Venadito cósmico is a flexible equation-of-state (EoS) w(z) and w(a) that tries to parametrize the behavior of Dark Energy at close and medium redshifts. The equation can be expanded from a 2-parameter eq. to a 5 parameter eq. and is also reducible to Lambda-CDM model (i.e. w=-1). It is to be tested using CLASS + MontePython codes using BAO, SNa, H(z) and Planck datasets.
+Venadito cósmico is a flexible equation-of-state (EoS) w(z) and w(a) that tries to parametrize the behavior of Dark Energy at close and medium redshifts. The equation can be expanded from a 2-parameter eq. (N=1) to a 5 parameter eq. (N=4) and is also reducible to Lambda-CDM model (i.e. w=-1) with N=0. It is to be tested using CLASS + MontePython codes using BAO, SNa, H(z) and Planck datasets.
 
 ##### Software and code in use:
 
@@ -36,10 +36,12 @@ This is a work in progress.
   - Biznaga de Peyote (Hikuri) (g)
 
 #### Serán simbolizados de la siguiente manera:
-  - El Fuego 
-  - El Sol a través de un escudo u "Ojo del Sol": Nearika/Nierika y con el número N=1
+  - El Universo con el nombre Kwaxi ó Kwari y con el número N=0, modelo Lambda-CDM
+  - El Fuego con el nombre Tatewari
+  - El Sol a través de un escudo u "Ojo del Sol": Nearika/Nierika y con el número N=1, modelo w-CDM ó CPL
   - El Águila con el número (N=2)
-  - El Venado Kauyumari (El Venado) (N=4) y Hikuri (El Abuelo)
+  - El Venado con el nombre Kauyumari y el número N=4
+  - Hikuri
 
 <p>
 <img src="img-2.jpg" height="200" align="middle">
