@@ -19,7 +19,7 @@ The purpose of the following images is to link the scientific research being con
 
 This is a work in progress.
 
-### A. The Myth of the origin of the Universe according to Wixarika and Nahua cultures
+### A. The Myth of the origin of the Universe according to Wixarika culture
 
 <img src="venadito.jpeg" height="400" width="400" align="middle" alt="el universo"> <img src="universo.jpg" height="400" align="middle">
 
