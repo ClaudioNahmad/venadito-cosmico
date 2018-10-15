@@ -36,12 +36,14 @@ This is a work in progress.
   - Biznaga de Peyote (Hikuri) (g)
 
 #### Serán simbolizados de la siguiente manera:
-  - El Universo con el nombre Kwaxi ó Kwari y con el número N=0, modelo Lambda-CDM
-  - El Fuego con el nombre Tatewari
-  - El Sol a través de un escudo u "Ojo del Sol": Nearika/Nierika y con el número N=1, modelo w-CDM ó CPL
-  - El Águila con el número (N=2)
+  - El Universo con el nombre Kwaxi ó Kwari y con el número N=0
+    - equivalente a modelo Lambda-CDM
+  - El Sol a través de un escudo u "Ojo del Sol": Nearika/Nierika y con el número N=1
+    - equivalente a modelo w-CDM ó CPL
+  - El Águila con el nombre Wimari y el número N=2
+    - parametrización con 3 parámetros
   - El Venado con el nombre Kauyumari y el número N=4
-  - Hikuri
+    - parametrización con 5 parámetros
 
 <p>
 <img src="img-2.jpg" height="200" align="middle">
