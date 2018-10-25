@@ -40,8 +40,10 @@ This is a work in progress.
     - equivalente a modelo Lambda-CDM con w=-1
   - El Sol a través de un escudo u "Ojo del Sol": Nearika/Nierika y con el número N=1
     - equivalente a modelo w0wa-CDM / parametrización CPL
-  - El Águila con el nombre Wimari y el número N=2
+  - La Tierra con el nombre Nakawe y el número N=2
     - parametrización con 3 parámetros libres
+  - El Águila con el nombre Wimari y el número N=3
+    - parametrización con 4 parámetros libres
   - El Venado con el nombre Kauyumari y el número N=4
     - parametrización con 5 parámetros libres
 
