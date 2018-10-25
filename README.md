@@ -3,11 +3,7 @@
 ## Venadito Cósmico version
 #### A five-parameter Dark Energy Parameterization 
 
-Venadito cósmico is a flexible equation-of-state (EoS) w(z) and w(a) that tries to parametrize the behavior of Dark Energy at close and medium redshifts. The equation can be expanded from a 2-parameter eq. to a 5 parameter eq. and is also reducible to Lambda-CDM model (i.e. w=-1). It is to be tested using CLASS + MontePython codes using BAO, SNa, H(z) and Planck datasets.
-
-The purpose of the following images is to link the scientific research being conducted, with the cosmogonic understanding of the Universe of the Wixarika and Nahua cultures in pre-hispanic Mexico, not just as an aesthetic analogy between numbers (N=1,2,3,4) and deities (Sun, Hawk, Deer, Peyote and Tlacuache) but as a test of reconciliation between the scientific work and the mithological tradition; two disciplines that appear to be antagonistic but may coexist peacefully and nourish from each other, making the scientific labour a more humane and diverse activity.
-
-This is a work in progress.
+Venadito cósmico is a flexible equation-of-state (EoS) w(z) and w(a) that tries to parametrize the behavior of Dark Energy at close and medium redshifts. The equation can be expanded from a 2-parameter eq. (N=1) to a 5 parameter eq. (N=4) and is also reducible to Lambda-CDM model (i.e. w=-1) with N=0. It is to be tested using CLASS + MontePython codes using BAO, SNa, H(z) and Planck datasets.
 
 ##### Software and code in use:
 
@@ -19,16 +15,38 @@ This is a work in progress.
 - Python
 - and ImageMagick for .pdf -> .png conversions
 
-### A. The Myth of the origin of the Universe according to Wixarika and Nahua cultures
+The purpose of the following images is to link the scientific research being conducted, with the cosmogonic understanding of the Universe (Tututzi Maxa Kwaxi) of the meso-american Waixarika (Huichol) culture in pre-hispanic Mexico. Not just as an aesthetic analogy between numbers (N=1,2,3,4) and deities (Sun, Eagle, Deer and Peyote) / (Tayau, Tatei Wexica Wimari, Tamatzi Kauyumari and Hikuri) but as a test of reconciliation between the scientific work and the mithological tradition; two disciplines that appear to be antagonistic but may coexist peacefully and nourish from each other, making the scientific labour a more humane and diverse activity.
+
+This is a work in progress.
+
+### A. The Myth of the origin of the Universe according to Wixarika culture
 
 <img src="venadito.jpeg" height="400" width="400" align="middle" alt="el universo"> <img src="universo.jpg" height="400" align="middle">
 
-#### El universo: Nealika (El Sol) (N=1), Piwami (El Halcón) (N=2), Kauyumari (El Venado) (N=4) y Hikuri (El Abuelo)
-#### El amigo Nahua que trae el fuego: Tlacuatzin (N=3)
+#### El universo:
+  - Bisabuelo Cola de Venado: El Universo (Tututzi Maxa Kwaxi)
+  - Abuela Tierra (Tukutzi Nakawe)
+  - Abuelo Fuego (Nairy / Tatewari)
+  - Padre Sol (Tayau)
+  - El Hermano Venado (Tamatzi Kauyumari) (a)
+  - Madre Águila (b)
+  - Corazón y Plumas de Águila (c,d)
+  - Abuela Tierra (imágen de la Tierra) (Tukutzi Nakawe) (e)
+  - Halcón (Piwa'mi) (f)
+  - Biznaga de Peyote (Hikuri) (g)
+
+#### Serán simbolizados de la siguiente manera:
+  - El Universo con el nombre Kwaxi ó Kwari y con el número N=0
+    - equivalente a modelo Lambda-CDM con w=-1
+  - El Sol a través de un escudo u "Ojo del Sol": Nearika/Nierika y con el número N=1
+    - equivalente a modelo w0wa-CDM / parametrización CPL
+  - El Águila con el nombre Wimari y el número N=2
+    - parametrización con 3 parámetros libres
+  - El Venado con el nombre Kauyumari y el número N=4
+    - parametrización con 5 parámetros libres
 
 <p>
-<img src="http://books.openedition.org/cemca/docannexe/image/2223/img-2.jpg" height="200" align="middle">
-<img src="tlacuatzin.jpg" align="middle" height="230">
+<img src="img-2.jpg" height="200" align="middle">
 </p>
 
 <!--otra imagen (cuervo) en "https://i.pinimg.com/originals/68/0a/b0/680ab0766d762f58282bf73b42b1a20b.jpg"-->
