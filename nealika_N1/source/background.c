@@ -498,7 +498,7 @@ int background_w_fld(
                      double * integral_fld) {
   /** 	1. first, define the function w(a) */
 
-  *w_fld = pba->b0_fld * (a) + pba->b1_fld * (1. -a);
+  *w_fld = (pba->b0_fld * (a) ) + (pba->b1_fld * (1. -a) );
   /* *w_fld = pba->w0_fld + pba->wa_fld * (1. - a / pba->a_today);  			CPL */ 
   /* *w_fld = pba->b0_fld * (a) + pba->b1_fld * (1. -a); 				WN1 */
   /* *w_fld = (pba->b0_fld * a) + (pba->b1_fld * (1. -a));				WN1 con paréntesis*/
