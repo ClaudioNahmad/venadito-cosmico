@@ -25,13 +25,12 @@ This is a work in progress.
 
 #### El universo:
   - Bisabuelo Cola de Venado: El Universo (Tututzi Maxa Kwaxi)
-  - Abuela Tierra (Tukutzi Nakawe)
+  - Abuela Tierra (imágen de la Tierra) (Tukutzi Nakawe) (e)
   - Abuelo Fuego (Nairy / Tatewari)
   - Padre Sol (Tayau)
   - El Hermano Venado (Tamatzi Kauyumari) (a)
   - Madre Águila (b)
   - Corazón y Plumas de Águila (c,d)
-  - Abuela Tierra (imágen de la Tierra) (Tukutzi Nakawe) (e)
   - Halcón (Piwa'mi) (f)
   - Biznaga de Peyote (Hikuri) (g)
 
