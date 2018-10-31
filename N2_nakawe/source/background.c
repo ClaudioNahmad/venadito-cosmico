@@ -526,7 +526,7 @@ int background_w_fld(
         a=a_ini, using for instance Romberg integration. It should be
         fast, simple, and accurate enough. */
 
-  *integral_fld = 3.*((pba->b1_fld - 2.*pba->b2_fld)*(1.-a) + 0.5*(pba->b0_fld-pba->b1_fld+pba->b2_fld)*(1.-pow(a,2.)) - log(a)*(1+pba->b2_fld));
+  *integral_fld = 3.*((pba->b1_fld - 2.*pba->b2_fld)*(1.-a) + 0.5*(pba->b0_fld-pba->b1_fld+pba->b2_fld)*(1.-pow(a,2.)) - log(a)*(1.+pba->b2_fld));
 
 
   /** note: of course you can generalise these formulas to anything,
