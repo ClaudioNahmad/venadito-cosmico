@@ -52,7 +52,7 @@ This is a work in progress.
 
 <!--otra imagen (cuervo) en "https://i.pinimg.com/originals/68/0a/b0/680ab0766d762f58282bf73b42b1a20b.jpg"-->
 
-### B. The pictographical results so far...
+### B. The Graphical results so far...
 
 <p>
 <h4> 1. Temperature Cl of w(N=1) vs CPL parametrizations, computed with CLASS 2</h4>
@@ -61,7 +61,7 @@ This is a work in progress.
 
 
 <p>
-<h4> 2. A MontePython run in which parameters w0 and w1 are tested with data from:
+<h4> 2. A MontePython run in which parameters w_0 and w_a are tested with data from:
   <ul>
   <li> Planck-Distance-Prior (background)
   <li> JLA
@@ -73,6 +73,21 @@ This is a work in progress.
 
 <h5> 2.2 Run on cluster with 16 cores and 20,000 steps </h5>
 <img src="atocatl1.png" align="middle" height="600">
+</p>
+
+<p>
+<h4> 3. A MontePython run in which parameters b_0 and b_1 are tested with data from:
+  <ul>
+  <li> JLA SNa type-Ia: luminosity distances
+  <li> BAO (BOSS DR12): angular distances 
+  </ul>
+</h4>
+
+<h5> 3.1 Run on Laptop with 4 cores, 2k steps each </h5>
+<img src="nrk_11-14_local1_f1.5.png" align="middle" height="600">
+
+<h5> 3.2 Run on Laptop with 4 cores, 10k steps each </h5>
+<img src="nrk_11-14_local3_f1.5.png" align="middle" height="600">
 </p>
 
 *************************************************************************
