@@ -84,10 +84,10 @@ This is a work in progress.
 </h4>
 
 <h5> 3.1 Run on Laptop with 4 cores, 2k steps each </h5>
-<img src="nrk_11-14_local1_f1.5.png" align="middle" height="600">
+<img src="nrk_11-14_local1_f1.5_triangle.png" align="middle" height="600">
 
 <h5> 3.2 Run on Laptop with 4 cores, 10k steps each </h5>
-<img src="nrk_11-14_local3_f1.5.png" align="middle" height="600">
+<img src="nrk_11-14_local3_f1.5_triangle.png" align="middle" height="600">
 </p>
 
 *************************************************************************
