@@ -59,6 +59,7 @@ This is a work in progress.
 <img src="comparison1.jpg" align="middle" height="600">
 </p>
 
+--------------------------------------------------------------------------------------------------------------------
 
 <p>
 <h4> 2. A MontePython run in which parameters w_0 and w_a are tested with data from:
@@ -74,6 +75,8 @@ This is a work in progress.
 <h5> 2.2 Run on cluster with 16 cores and 20,000 steps </h5>
 <img src="atocatl1.png" align="middle" height="600">
 </p>
+
+--------------------------------------------------------------------------------------------------------------------
 
 <p>
 <h4> 3. A MontePython run in which parameters b_0 and b_1 are tested with data from:
