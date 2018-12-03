@@ -56,7 +56,7 @@ This is a work in progress.
 
 <p>
 <h4> 1. Temperature Cl of w(N=1) vs CPL parametrizations, computed with CLASS 2</h4>
-<img src="comparison1.jpg" align="middle" height="600">
+<img src="comparison2.png" align="middle" height="600">
 </p>
 
 --------------------------------------------------------------------------------------------------------------------
