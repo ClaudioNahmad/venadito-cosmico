@@ -1,7 +1,0 @@
-# List of input/precision parameters passed
-# but not used (just for info)
-#
-b) equation of state parameters (p/rho = w0_fld + wa_fld (1-a/a0) )
-b0_fld = -1.063132
-b1_fld = -2.386663
-write warnings = y__________ow
