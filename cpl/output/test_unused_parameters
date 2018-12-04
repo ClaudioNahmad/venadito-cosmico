@@ -2,6 +2,8 @@
 # but not used (just for info)
 #
 l_max_tensors = 500
+P_k_max_h/Mpc = 1.
+z_pk = 0
 selection = gaussian
 selection_mean = 1.
 selection_width = 0.5
