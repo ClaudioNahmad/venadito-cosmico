@@ -8,7 +8,7 @@ Venadito cósmico is a flexible equation-of-state (EoS) w(z) and w(a) that tries
 ##### Software and code in use:
 
 - [CLASS 2.6.3](https://github.com/lesgourg/class_public)
-- [MontePython 2.2.2](https://monte-python.readthedocs.io/en/latest/index.html)
+- [MontePython 3.1.0](https://monte-python.readthedocs.io/en/latest/index.html)
 - Wolfram Mathematica
 - Intel Fortran Compiler
 - Open MPI
@@ -62,24 +62,7 @@ This is a work in progress.
 --------------------------------------------------------------------------------------------------------------------
 
 <p>
-<h4> 2. A MontePython run in which parameters w_0 and w_a are tested with data from:
-  <ul>
-  <li> Planck-Distance-Prior (background)
-  <li> JLA
-  </ul>
-</h4>
-
-<h5> 2.1 Run on Laptop with 4 cores and 5000 steps </h5>
-<img src="w0wa.png" align="middle" height="600">
-
-<h5> 2.2 Run on cluster with 16 cores and 20,000 steps </h5>
-<img src="atocatl1.png" align="middle" height="600">
-</p>
-
---------------------------------------------------------------------------------------------------------------------
-
-<p>
-<h4> 3. A MontePython run in which parameters b_0 and b_1 are tested with data from:
+<h4> 2. A MontePython run in which parameters b_0 and b_1 are tested with data from:
   <ul>
   <li> JLA SNa type-Ia: luminosity distances
   <li> BAO (BOSS DR12): angular distances 
