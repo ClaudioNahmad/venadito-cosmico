@@ -498,17 +498,8 @@ int background_w_fld(
                      double * integral_fld) {
   /** 	1. first, define the function w(a) */
 
-  *w_fld = pba->w0_fld + pba->wa_fld * ((1. - a / pow(a,2.) )/(1+pow((1. - a / a),2)));
+  *w_fld = (pba->w0_fld - 2.*a*pba->w0_fld + 2.*pow(a,2.)*pba->w0_fld + pba->wa_fld - a*pba->wa_fld)/(1. - 2.*a + 2.*pow(a,2.));
   /* *w_fld = pba->w0_fld + pba->wa_fld * (1. - a / pba->a_today);  			CPL */ 
-/**************************************************************************************************************************/
-	/*NOTAAAAAAAAAAAAAAAAA		HIKURI 12-abr-18
-		el parámetro q_factor y a_trans no los definas abajo de struct!!!!
-		definelos localmente como 
-			double q = pba-> q_factor
-			double wa = pba -> wa_fld
-			double a_trans = pba -> a_trans
-	*/
-/**************************************************************************************************************************/
 
   /**	2. then, give the corresponding analytic derivative dw/da (used
         by perturbation equations; we could compute it numerically,
@@ -516,7 +507,7 @@ int background_w_fld(
         analytic expression of the derivative of the previous
         function, let's use it! */
 
-  *dw_over_da_fld =  pba->wa_fld (((2.*pow(a,2.))-(4.*a)+1.)  / ((2.*pow(a,2.))-(2.*a)+1.)) ;
+  *dw_over_da_fld =  ((1. - 4.*a + 2.*pow(a,2.))*pba->wa)/pow(1. - 2.*a + 2.*pow(a,2.),2.);
   /* *dw_over_da_fld = - pba->wa_fld / pba->a_today; 					CPL */
 
   /**	3. 
@@ -531,7 +522,7 @@ int background_w_fld(
         a=a_ini, using for instance Romberg integration. It should be
         fast, simple, and accurate enough. */
 
-  *integral_fld = 3.*((-1.+pba->w0_fld+pba->wa_fld)*log(pba->a_today/)+((1./2.)*pba->wa_fld*log(1.-2.*a+(2.*pow(a,2.))));
+  *integral_fld = 3.*(-((1. + pba->w0_fld + pba->wa_fld)*log(a)) + (pba->wa_fld*log(1. - 2.*a + 2.*pow(a,2.)))/2.)
   /**  *integral_fld = 3.*((1.+pba->w0_fld+pba->wa_fld)*log(pba->a_today/a) + pba->wa_fld*(a/pba->a_today-1.));        CPL*/
 
 
