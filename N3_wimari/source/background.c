@@ -528,7 +528,6 @@ int background_w_fld(
 
   *integral_fld = 3.*((pba->b2_fld - 3.*pba->b3_fld)*(1.-a) + 0.5*(pba->b1_fld - 2.*pba->b2_fld + 3.*pba->b3_fld)*(1.-pow(a,2.)) + (1./3.)*(pba->b0_fld - pba->b1_fld + pba->b2_fld - pba->b3_fld)*(1.-pow(a,3.)) - log(a)*(1+pba->b3_fld));
 
-
   /** note: of course you can generalise these formulas to anything,
       defining new parameters pba->w..._fld. Just remember that so
       far, HyRec explicitely assumes that w(a)= w0 + wa (1-a/a0); but
