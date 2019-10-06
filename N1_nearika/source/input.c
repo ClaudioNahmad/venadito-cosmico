@@ -2912,7 +2912,7 @@ int input_default_params(
   pba->c_gamma_over_c_fld = 0.4;
 
   pba->b0_fld=-1.;
-  pba->b1_fld=0.;
+  pba->b1_fld=-1.;
 
   pba->shooting_failed = _FALSE_;
 
