@@ -15,7 +15,8 @@ Venadito cósmico is a flexible equation-of-state (EoS) w(z) and w(a) that tries
 - Python
 - and ImageMagick for .pdf -> .png conversions
 
-The purpose of the following images is to link the scientific research being conducted, with the cosmogonic understanding of the Universe (Tututzi Maxa Kwaxi) of the meso-american Waixarika (Huichol) culture in pre-hispanic Mexico. Not just as an aesthetic analogy between numbers (N=1,2,3,4) and deities (Sun, Eagle, Deer and Peyote) / (Tayau, Tatei Wexica Wimari, Tamatzi Kauyumari and Hikuri) but as a test of reconciliation between the scientific work and the mithological tradition; two disciplines that appear to be antagonistic but may coexist peacefully and nourish from each other, making the scientific labour a more humane and diverse activity.
+
+<!--The purpose of the following images is to link the scientific research being conducted, with the cosmogonic understanding of the Universe (Tututzi Maxa Kwaxi) of the meso-american Waixarika (Huichol) culture in pre-hispanic Mexico. Not just as an aesthetic analogy between numbers (N=1,2,3,4) and deities (Sun, Eagle, Deer and Peyote) / (Tayau, Tatei Wexica Wimari, Tamatzi Kauyumari and Hikuri) but as a test of reconciliation between the scientific work and the mithological tradition; two disciplines that appear to be antagonistic but may coexist peacefully and nourish from each other, making the scientific labour a more humane and diverse activity.
 
 This is a work in progress.
 
@@ -44,7 +45,7 @@ This is a work in progress.
   - El Águila con el nombre Wimari y el número N=3
     - parametrización con 4 parámetros libres
   - El Venado con el nombre Kauyumari y el número N=4
-    - parametrización con 5 parámetros libres
+    - parametrización con 5 parámetros libres-->
 
 <p>
 <img src="img-2.jpg" height="200" align="middle">
@@ -77,7 +78,7 @@ This is a work in progress.
 </p>
 
 *************************************************************************
-## Claudio Nahmad Arcaraz | 2018
+## Claudio Nahmad Arcaraz | 2018 -2020
 #### BSc. Thesis at Instituto de Física UNAM for physics bachelor's degree
   - Check out more on the thesis work [here](https://github.com/ClaudioNahmad/thesis_BSc)
   - Check out the montepython repository of this work [here](https://github.com/ClaudioNahmad/montepython-kauyumari)
