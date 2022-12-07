@@ -73,7 +73,7 @@ This is a work in progress.
 <h5> 2.1 Run on Laptop with 4 cores, 10k steps each </h5>
 <img src="nrk_11-14_local3_f1.5_triangle.png" align="middle" height="600">
 
-<h5> 2.2 Run on Cluster with 8 cores, 400k steps each </h5>
+<h5> 2.2 Run on Cluster with 8 cores, 40k steps each </h5>
 <img src="nrk_11-28_f1.7.png" align="middle" height="600">
 </p>
 
