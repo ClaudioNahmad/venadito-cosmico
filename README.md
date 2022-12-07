@@ -53,7 +53,7 @@ This is a work in progress.
 
 <!--otra imagen (cuervo) en "https://i.pinimg.com/originals/68/0a/b0/680ab0766d762f58282bf73b42b1a20b.jpg"-->
 
-### B. The Graphical results so far...
+### B. These results are outdated, please refer to montepython repository...
 
 <p>
 <h4> 1. Temperature Cl of w(N=1) vs CPL parametrizations, computed with CLASS 2</h4>
