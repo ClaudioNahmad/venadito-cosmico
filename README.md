@@ -1,6 +1,3 @@
-# CLASS: Cosmic Linear Anisotropy Solving System
-
-## Venadito Cósmico version
 #### A five-parameter Dark Energy Parameterization 
 
 Venadito cósmico is a flexible equation-of-state (EoS) w(z) and w(a) that tries to parametrize the behavior of Dark Energy at close and medium redshifts. The equation can be expanded from a 2-parameter eq. (N=1) to a 5 parameter eq. (N=4) and is also reducible to Lambda-CDM model (i.e. w=-1) with N=0. It is to be tested using CLASS + MontePython codes using BAO, SNa, H(z) and Planck datasets.
